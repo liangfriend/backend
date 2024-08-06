@@ -1,0 +1,10 @@
+<body>
+    <button onclick="btn()">获取文件</button>
+</body>
+<script>
+
+    const btn=async ()=>{
+        const size=await fetch("http://127.0.0.1:3000/getFileSize")
+        console.log(size)
+    }
+</script>
